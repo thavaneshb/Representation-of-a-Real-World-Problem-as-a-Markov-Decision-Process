@@ -157,64 +157,8 @@ for s in states:
 
 ## Output
 
-```
+<img width="872" height="757" alt="image" src="https://github.com/user-attachments/assets/0dde5f05-5dd3-41ef-b72c-ee69b41a9bd4" />
 
-Name: THAVANESH B
-Register Number: 212224040352
-
-States:
-- Idle at Docking Station
-- Object Located
-- Carrying Object
-- Low Inventory Detected
-- Low Battery
-
-Actions:
-- Move to Object
-- Pick Up Object
-- Place Object
-- Scan Inventory
-- Replenish Stock
-- Select Supplier and Route
-- Recharge Battery
-
-Transitions P(s'|s,a) and R(s,a,s'):
-(Idle at Docking Station, Move to Object) -> Object Located | P=0.85 | R=2
-(Idle at Docking Station, Move to Object) -> Idle at Docking Station | P=0.1 | R=-1
-(Idle at Docking Station, Move to Object) -> Low Battery | P=0.05 | R=-2
-(Idle at Docking Station, Scan Inventory) -> Low Inventory Detected | P=0.3 | R=5
-(Idle at Docking Station, Scan Inventory) -> Idle at Docking Station | P=0.7 | R=1
-(Object Located, Pick Up Object) -> Carrying Object | P=0.9 | R=5
-(Object Located, Pick Up Object) -> Object Located | P=0.1 | R=-2
-(Carrying Object, Place Object) -> Idle at Docking Station | P=0.9 | R=15
-(Carrying Object, Place Object) -> Carrying Object | P=0.05 | R=-3
-(Carrying Object, Place Object) -> Low Battery | P=0.05 | R=10
-(Low Inventory Detected, Replenish Stock) -> Idle at Docking Station | P=0.7 | R=8
-(Low Inventory Detected, Replenish Stock) -> Low Inventory Detected | P=0.3 | R=-2
-(Low Inventory Detected, Select Supplier and Route) -> Idle at Docking Station | P=0.9 | R=12
-(Low Inventory Detected, Select Supplier and Route) -> Low Inventory Detected | P=0.1 | R=-3
-(Low Battery, Recharge Battery) -> Idle at Docking Station | P=0.95 | R=-1
-(Low Battery, Recharge Battery) -> Low Battery | P=0.05 | R=-1
-
-Discount Factor: 0.9
-
-Optimal State Values:
-V(Idle at Docking Station) = 56.60
-V(Object Located) = 62.44
-V(Carrying Object) = 64.84
-V(Low Inventory Detected) = 61.91
-V(Low Battery) = 49.62
-
-Optimal Policy:
-Idle at Docking Station -> Move to Object
-Object Located -> Pick Up Object
-Carrying Object -> Place Object
-Low Inventory Detected -> Select Supplier and Route
-Low Battery -> Recharge Battery
-
-
-
-```
 
 ## Result
 
