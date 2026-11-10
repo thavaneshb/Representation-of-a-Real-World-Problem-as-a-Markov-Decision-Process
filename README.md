@@ -117,8 +117,8 @@ The graph should include:
 
 ## Python Representation
 ```
-print("Name: NAVEEN.S")
-print("Register Number: 212223240106\n")
+print("Name: THAVANESH B")
+print("Register Number: 212224040352\n")
 
 states = ["Idle at Docking Station","Object Located","Carrying Object","Low Inventory Detected","Low Battery"]
 actions = ["Move to Object","Pick Up Object","Place Object","Scan Inventory","Replenish Stock","Select Supplier and Route","Recharge Battery"]
@@ -159,8 +159,8 @@ for s in states:
 
 ```
 
-Name: NAVEEN.S
-Register Number: 212223240106
+Name: THAVANESH B
+Register Number: 212224040352
 
 States:
 - Idle at Docking Station
